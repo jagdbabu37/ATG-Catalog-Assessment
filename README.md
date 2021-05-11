@@ -43,9 +43,9 @@ a)http://localhost:8080/v1/catalogs/{id} (End pint  to retreive catalog deatils 
 
 b)http://localhost:8080/v1/catalogs/items/{id}(End pint  to retrieve list of  item  details by catalog id)
 
-c)http://localhost:8080/v1/catalogs/addItem (End point to ad itesm to the catlog))
+c)http://localhost:8080/v1/catalogs/addItem (End point to ad item to the catalog))
 
-d)http://localhost:8080/v1/catalogs/createCatalog(End point to create the catlog)
+d)http://localhost:8080/v1/catalogs/createCatalog(End point to create the catalog)
 
 Used the in memory Database H2 to manage the persistence.
 Spring JDBC for Database operations.
