@@ -33,18 +33,26 @@ as long as the steps are there for someone else to run the application.
     * `price` is required
 * Update the `GET /v1/catalogs/{id}` to return also return all `Item`s associated with the `Catalog`
 * Create unit and functional tests to validate the code
-#Assement Updates 
+**#Assement Updates **
 Added 4 endpoints to the projects
 a)http://localhost:8080/v1/catalogs/{id} (End pint  to retreive catalog deatils by catalog id)
+
 b)http://localhost:8080/v1/catalogs/items/{id}(End pint  to retrieve list of  item  details by catalog id)
+
 c)http://localhost:8080/v1/catalogs/addItem (End point to ad itesm to the catlog))
+
 d)http://localhost:8080/v1/catalogs/createCatalog(End point to create the catlog)
+
 Used the in memory Database H2 to manage the persistence.
 Spring JDBC for Database operations.
-Use the below CURL's to create catalog and Items
-curl  http://localhost:8080/v1/catalog/createCatalog -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d "{\"id\":\"1234\",\"name\":\"jagdish\",\"description\":\"linuxize@example.com\",\"referenceId\":\"zyx\"}"
-curl  curl  http://localhost:8080/v1/catalogs/addItem -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d "{\"id\":\"1234\",\"name\":\"tractor\",\"description\":\"heavyTractor\",\"referenceId\":\"zyx\",\"catalogId\":\"1\",\"price\":\"123.00\"}"
-Updated the test cases.
+Check the resources folder to see the data base schema and initial data load
+
+CURL's to create catalog 
+curl  http://localhost:8080/v1/catalog/createCatalog -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d "{\"name\":\"jagdish\",\"description\":\"linuxize@example.com\",\"referenceId\":\"zyx\"}"
+
+CURL's to add itm to the catalog 
+curl  curl  http://localhost:8080/v1/catalogs/addItem -H "Accept: application/json" -H "Content-Type: application/json" -X POST -d "{\"name\":\"tractor\",\"description\":\"heavyTractor\",\"referenceId\":\"zyx\",\"catalogId\":\"1\",\"price\":\"123.00\"}"
+
 
 
 ## Submitting the Exercise
