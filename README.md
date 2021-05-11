@@ -36,7 +36,9 @@ as long as the steps are there for someone else to run the application.
 
 
 **#Assement Updates **
+
 Added 4 endpoints to the projects
+
 a)http://localhost:8080/v1/catalogs/{id} (End pint  to retreive catalog deatils by catalog id)
 
 b)http://localhost:8080/v1/catalogs/items/{id}(End pint  to retrieve list of  item  details by catalog id)
