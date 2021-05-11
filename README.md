@@ -33,6 +33,8 @@ as long as the steps are there for someone else to run the application.
     * `price` is required
 * Update the `GET /v1/catalogs/{id}` to return also return all `Item`s associated with the `Catalog`
 * Create unit and functional tests to validate the code
+
+
 **#Assement Updates **
 Added 4 endpoints to the projects
 a)http://localhost:8080/v1/catalogs/{id} (End pint  to retreive catalog deatils by catalog id)
